@@ -1,5 +1,5 @@
 import PaintingList from './components/Painting/PaintingList';
-import Section from './components/Section/Section';
+import Container from './components/Container/Container';
 import SocialProfile from './components/SocialProfile/SocialProfile';
 import user from './components/SocialProfile/user.json';
 import Statistics from './components/Statistics/Statistics';
@@ -12,7 +12,7 @@ import transactions from './components/TransactionHistory/transactions.json';
 
 export default function App() {
   return (
-    <Section>
+    <Container>
       <SocialProfile
         name={user.name}
         tag={user.tag}
@@ -20,10 +20,10 @@ export default function App() {
         avatar={user.avatar}
         stats={user.stats}
       />
-      ;
-      <Statistics title="Upload stats" stats={statisticalData} />; //{' '}
-      <FriendList friends={friends} />; //{' '}
-      <TransactionHistory items={transactions} />;
-    </Section>
+
+      <Statistics title="Upload stats" stats={statisticalData} />
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
+    </Container>
   );
 }

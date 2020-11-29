@@ -1,0 +1,32 @@
+.item {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  display: block;
+  margin-right: 20px;
+}
+
+.presense {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.isOnline {
+  composes: presense;
+  background-color: green;
+}
+
+.isOffline {
+  composes: presense;
+  background-color: tomato;
+}
+
+.name {
+  font-size: larger;
+  font-weight: 700;
+}
